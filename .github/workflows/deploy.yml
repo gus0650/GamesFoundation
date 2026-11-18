@@ -1,0 +1,38 @@
+name: Deploy to United Domains via SFTP
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install sshpass
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq sshpass
+
+      - name: Upload via SFTP
+        env:
+          SSHPASS: ${{ secrets.FTP_PASSWORD }}
+          SFTP_USER: ${{ secrets.FTP_USERNAME }}
+          SFTP_HOST: ${{ secrets.FTP_SERVER }}
+          # Target folder on the server, relative to the SFTP login folder.
+          # Default: gamesfoundation (lowercase - server paths are case-sensitive). Can be changed without code changes via the
+          # repository variable SFTP_REMOTE_DIR
+          # (Settings > Secrets and variables > Actions > Variables).
+          REMOTE_DIR: ${{ vars.SFTP_REMOTE_DIR || 'gamesfoundation' }}
+        run: |
+          # Batch: create the target folder if missing (leading '-' ignores
+          # "already exists"), then upload all visible files and folders.
+          # The '*' glob skips hidden entries such as .git and .github.
+          cat > "$RUNNER_TEMP/sftp-batch.txt" <<EOF
+          -mkdir ${REMOTE_DIR}
+          cd ${REMOTE_DIR}
+          put -r *
+          EOF
+          sshpass -e sftp -oBatchMode=no -oStrictHostKeyChecking=accept-new \
+            -P 22 -b "$RUNNER_TEMP/sftp-batch.txt" "${SFTP_USER}@${SFTP_HOST}"
