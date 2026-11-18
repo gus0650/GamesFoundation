@@ -29,3 +29,9 @@ div {
 a {
 	color: inherit;
 }
+/* Mobile: full width and readable text size on narrow screens */
+@media (max-width: 800px) {
+	table[width="50%"] { width: 100% !important; }
+	div { width: 100vw; font-size: 16px; }
+	.btn { font-size: 16px; }
+}
