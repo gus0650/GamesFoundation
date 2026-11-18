@@ -1,0 +1,26 @@
+name: SFTP – list server folders (diagnostic)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install sshpass
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq sshpass
+
+      - name: List folders (read-only)
+        env:
+          SSHPASS: ${{ secrets.FTP_PASSWORD }}
+          SFTP_USER: ${{ secrets.FTP_USERNAME }}
+          SFTP_HOST: ${{ secrets.FTP_SERVER }}
+        run: |
+          cat > "$RUNNER_TEMP/batch.txt" <<EOF
+          pwd
+          ls -la
+          -ls -la GamesFoundation
+          -ls -la gamesfoundation
+          EOF
+          sshpass -e sftp -oBatchMode=no -oStrictHostKeyChecking=accept-new \
+            -P 22 -b "$RUNNER_TEMP/batch.txt" "${SFTP_USER}@${SFTP_HOST}"
