@@ -41,21 +41,21 @@
 			nl: 'GAMES FOUNDATION is een productiebedrijf dat digitale games maakt voor de internationale markt.'
 		},
 		'You have an amazing game and you need help getting it funded and published?': {
-			de: 'Sie haben ein großartiges Spiel und brauchen Unterstützung bei Finanzierung und Veröffentlichung?',
+			de: 'Ihr habt ein großartiges Spiel und braucht Unterstützung bei Finanzierung und Veröffentlichung?',
 			da: 'Har du et fantastisk spil og brug for hjælp til at få det finansieret og udgivet?',
 			sv: 'Har du ett fantastiskt spel och behöver hjälp att finansiera och ge ut det?',
 			no: 'Har du et fantastisk spill og trenger hjelp til å få det finansiert og utgitt?',
 			nl: 'Heb je een geweldige game en zoek je hulp bij de financiering en publicatie?'
 		},
 		'We can assist you when raising money from investors, government programs, crowdfunding campaigns or publishers. We can put your game out on all major platforms. We work on a pure revenue share model. No upfront cost.': {
-			de: 'Wir unterstützen Sie dabei, Geld von Investoren, aus Förderprogrammen, über Crowdfunding-Kampagnen oder von Publishern einzuwerben. Wir bringen Ihr Spiel auf alle großen Plattformen. Wir arbeiten ausschließlich auf Basis einer Umsatzbeteiligung. Keine Vorabkosten.',
+			de: 'Wir unterstützen euch dabei, Geld von Investoren, aus Förderprogrammen, über Crowdfunding-Kampagnen oder von Publishern einzuwerben. Wir bringen euer Spiel auf alle großen Plattformen. Wir arbeiten ausschließlich auf Basis einer Umsatzbeteiligung. Keine Vorabkosten.',
 			da: 'Vi kan hjælpe dig med at rejse penge fra investorer, offentlige støtteprogrammer, crowdfunding-kampagner eller udgivere. Vi kan udgive dit spil på alle store platforme. Vi arbejder udelukkende med omsætningsdeling. Ingen omkostninger på forhånd.',
 			sv: 'Vi kan hjälpa dig att ta in pengar från investerare, offentliga stödprogram, crowdfundingkampanjer eller förlag. Vi kan släppa ditt spel på alla stora plattformar. Vi arbetar enbart med intäktsdelning. Inga kostnader i förväg.',
 			no: 'Vi kan hjelpe deg med å hente penger fra investorer, offentlige støtteordninger, crowdfunding-kampanjer eller utgivere. Vi kan gi ut spillet ditt på alle store plattformer. Vi jobber utelukkende med inntektsdeling. Ingen kostnader på forhånd.',
 			nl: 'We helpen je bij het ophalen van geld bij investeerders, overheidsprogramma\'s, crowdfundingcampagnes of uitgevers. We kunnen je game uitbrengen op alle grote platforms. We werken uitsluitend op basis van omzetdeling. Geen kosten vooraf.'
 		},
 		'Here\'s what we can do for you.': {
-			de: 'Das können wir für Sie tun.',
+			de: 'Das können wir für euch tun.',
 			da: 'Her er, hvad vi kan gøre for dig.',
 			sv: 'Det här kan vi göra för dig.',
 			no: 'Dette kan vi gjøre for deg.',
@@ -65,7 +65,7 @@
 			de: 'FÜR INVESTOREN', da: 'FOR INVESTORER', sv: 'FÖR INVESTERARE', no: 'FOR INVESTORER', nl: 'VOOR INVESTEERDERS'
 		},
 		'You have money and you want to invest into digital games. We show you a porfolio of games and you can choose which ones you like. You co-fund the development of those games. We guarantee that the games will be completed and published. You get a share of the revenue.': {
-			de: 'Sie haben Kapital und möchten in digitale Spiele investieren. Wir zeigen Ihnen ein Portfolio von Spielen, und Sie wählen aus, welche Ihnen gefallen. Sie finanzieren die Entwicklung dieser Spiele mit. Wir garantieren, dass die Spiele fertiggestellt und veröffentlicht werden. Sie erhalten einen Anteil am Umsatz.',
+			de: 'Ihr habt Kapital und möchtet in digitale Spiele investieren. Wir zeigen euch ein Portfolio von Spielen, und ihr wählt aus, welche euch gefallen. Ihr finanziert die Entwicklung dieser Spiele mit. Wir garantieren, dass die Spiele fertiggestellt und veröffentlicht werden. Ihr erhaltet einen Anteil am Umsatz.',
 			da: 'Du har penge og vil investere i digitale spil. Vi viser dig en portefølje af spil, og du vælger dem, du kan lide. Du medfinansierer udviklingen af disse spil. Vi garanterer, at spillene bliver færdiggjort og udgivet. Du får en andel af omsætningen.',
 			sv: 'Du har pengar och vill investera i digitala spel. Vi visar dig en portfölj av spel och du väljer dem du gillar. Du är med och finansierar utvecklingen av spelen. Vi garanterar att spelen blir färdiga och släpps. Du får en andel av intäkterna.',
 			no: 'Du har penger og vil investere i digitale spill. Vi viser deg en portefølje av spill, og du velger de du liker. Du er med på å finansiere utviklingen av disse spillene. Vi garanterer at spillene blir ferdigstilt og utgitt. Du får en andel av inntektene.',
@@ -85,14 +85,14 @@
 			nl: 'Je hebt een game in ontwikkeling. We helpen je geld op te halen bij investeerders of overheidsprogramma\'s. Jij neemt het geld en maakt je game. Wij zorgen dat je game wordt uitgebracht. Jij krijgt het grootste deel van de omzet, wij houden een klein deel. Maandelijkse rapportage, volledige transparantie, geen bullshit. Wij regelen al het juridische, de belastingen en de administratie voor je. Je hebt geen eigen bedrijf nodig.'
 		},
 		'Please send your application by email to': {
-			de: 'Bitte senden Sie Ihre Bewerbung per E-Mail an',
+			de: 'Bitte schickt eure Bewerbung per E-Mail an',
 			da: 'Send venligst din ansøgning pr. e-mail til',
 			sv: 'Skicka din ansökan via e-post till',
 			no: 'Send søknaden din på e-post til',
 			nl: 'Stuur je sollicitatie per e-mail naar'
 		},
 		'Please avoid large email attachments and send links instead.': {
-			de: 'Bitte verzichten Sie auf große E-Mail-Anhänge und senden Sie stattdessen Links.',
+			de: 'Bitte verzichtet auf große E-Mail-Anhänge und schickt stattdessen Links.',
 			da: 'Undgå venligst store vedhæftede filer, og send hellere links.',
 			sv: 'Undvik stora e-postbilagor och skicka hellre länkar.',
 			no: 'Unngå store e-postvedlegg, og send heller lenker.',
@@ -120,7 +120,7 @@
 			nl: 'Games waaraan ons team heeft gewerkt, hebben brede erkenning gekregen:'
 		},
 		'Follow uns on social media:': {
-			de: 'Folgen Sie uns in den sozialen Medien:',
+			de: 'Folgt uns in den sozialen Medien:',
 			da: 'Følg os på sociale medier:',
 			sv: 'Följ oss i sociala medier:',
 			no: 'Følg oss på sosiale medier:',
