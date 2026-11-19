@@ -70,6 +70,56 @@ a.cta:hover::after, a.cta:focus-visible::after {
 td.svc { position: relative; padding-bottom: 4.5em; }
 td.svc .cta-row { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; }
 
+/* Projects carousel (swipe = CSS scroll-snap; arrows and dots added by carousel.js) */
+.carousel-wrap { display: block; position: relative; margin: 0 0 1em; }
+ul.carousel {
+	display: flex;
+	align-items: flex-start;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+	outline: none;
+}
+ul.carousel::-webkit-scrollbar { display: none; }
+ul.carousel > li { flex: 0 0 100%; scroll-snap-align: center; }
+ul.carousel p { margin: 0 0 0.6em; }
+ul.carousel img { display: block; width: 100%; height: auto; border: 0; }
+.carousel-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.8em;
+	height: 1.8em;
+	padding: 0;
+	border: 0;
+	background: #000000;
+	color: #ffffff;
+	font-size: 2em;
+	line-height: 1;
+	cursor: pointer;
+	opacity: 0.8;
+}
+.carousel-arrow:hover, .carousel-arrow:focus-visible { opacity: 1; }
+.carousel-prev { left: 1%; }
+.carousel-next { right: 1%; }
+.carousel-dots { margin: 0.8em 0 0; }
+.carousel-dots button {
+	width: 0.7em;
+	height: 0.7em;
+	margin: 0 0.25em;
+	padding: 0;
+	border: 1px solid #000000;
+	background: transparent;
+	cursor: pointer;
+}
+.carousel-dots button.active { background: #000000; }
+
 /* Mobile: full width and readable text size on narrow screens */
 @media (max-width: 800px) {
 	table[width="50%"] { width: 100% !important; }
@@ -80,4 +130,6 @@ td.svc .cta-row { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; }
 	table[width="90%"] td { display: block; width: 100% !important; }
 	td.svc { padding-bottom: 0; }
 	td.svc .cta-row { position: static; margin: 0 0 2.5em; }
+	.carousel-arrow { font-size: 1.4em; }
+	.carousel-dots button { width: 0.6em; height: 0.6em; margin: 0 0.15em; }
 }
