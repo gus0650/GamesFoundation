@@ -48,11 +48,11 @@
 			nl: 'Heb je een geweldige game en zoek je hulp bij de financiering en publicatie?'
 		},
 		'We can assist you when raising money from investors, government programs, crowdfunding campaigns or publishers. We can put your game out on all major platforms. We work on a pure revenue share model. No upfront cost.': {
-			de: 'Wir unterstützen euch dabei, Geld von Investoren, aus Förderprogrammen, über Crowdfunding-Kampagnen oder von Publishern einzuwerben. Wir bringen euer Spiel auf alle großen Plattformen. Wir arbeiten ausschließlich auf Basis einer Umsatzbeteiligung. Keine Vorabkosten.',
-			da: 'Vi kan hjælpe dig med at rejse penge fra investorer, offentlige støtteprogrammer, crowdfunding-kampagner eller udgivere. Vi kan udgive dit spil på alle store platforme. Vi arbejder udelukkende med omsætningsdeling. Ingen omkostninger på forhånd.',
-			sv: 'Vi kan hjälpa dig att ta in pengar från investerare, offentliga stödprogram, crowdfundingkampanjer eller förlag. Vi kan släppa ditt spel på alla stora plattformar. Vi arbetar enbart med intäktsdelning. Inga kostnader i förväg.',
-			no: 'Vi kan hjelpe deg med å hente penger fra investorer, offentlige støtteordninger, crowdfunding-kampanjer eller utgivere. Vi kan gi ut spillet ditt på alle store plattformer. Vi jobber utelukkende med inntektsdeling. Ingen kostnader på forhånd.',
-			nl: 'We helpen je bij het ophalen van geld bij investeerders, overheidsprogramma\'s, crowdfundingcampagnes of uitgevers. We kunnen je game uitbrengen op alle grote platforms. We werken uitsluitend op basis van omzetdeling. Geen kosten vooraf.'
+			de: 'Wir unterstützen euch dabei, Geld von Investoren, aus Förderprogrammen, über Crowdfunding-Kampagnen oder von Publishern einzuwerben. Wir bringen euer Spiel auf alle wichtigen Plattformen. Wir arbeiten ausschließlich auf Basis einer Umsatzbeteiligung. Keine Vorabkosten.',
+			da: 'Vi kan hjælpe dig med at rejse penge fra investorer, offentlige støtteprogrammer, crowdfunding-kampagner eller udgivere. Vi kan udgive dit spil på alle vigtige platforme. Vi arbejder udelukkende med omsætningsdeling. Ingen omkostninger på forhånd.',
+			sv: 'Vi kan hjälpa dig att ta in pengar från investerare, offentliga stödprogram, crowdfundingkampanjer eller förlag. Vi kan släppa ditt spel på alla viktiga plattformar. Vi arbetar enbart med intäktsdelning. Inga kostnader i förväg.',
+			no: 'Vi kan hjelpe deg med å hente penger fra investorer, offentlige støtteordninger, crowdfunding-kampanjer eller utgivere. Vi kan gi ut spillet ditt på alle viktige plattformer. Vi jobber utelukkende med inntektsdeling. Ingen kostnader på forhånd.',
+			nl: 'We helpen je bij het ophalen van geld bij investeerders, overheidsprogramma\'s, crowdfundingcampagnes of uitgevers. We kunnen je game uitbrengen op alle belangrijke platforms. We werken uitsluitend op basis van omzetdeling. Geen kosten vooraf.'
 		},
 		'Here\'s what we can do for you.': {
 			de: 'Das bieten wir an.',
