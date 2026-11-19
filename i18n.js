@@ -84,12 +84,12 @@
 			no: 'Du har et spill under utvikling. Vi hjelper deg med å hente penger fra investorer eller offentlige støtteordninger. Du tar pengene og lager spillet ditt. Vi sørger for at spillet ditt blir utgitt. Du får mesteparten av inntektene, mens vi beholder en liten andel. Vi tar oss av alt det juridiske, skatt og administrasjon for deg. Du trenger ikke ha ditt eget selskap.',
 			nl: 'Je hebt een game in ontwikkeling. We helpen je geld op te halen bij investeerders of overheidsprogramma\'s. Jij neemt het geld en maakt je game. Wij zorgen dat je game wordt uitgebracht. Jij krijgt het grootste deel van de omzet, wij houden een klein deel. Wij regelen al het juridische, de belastingen en de administratie voor je. Je hebt geen eigen bedrijf nodig.'
 		},
-		'Monthly reporting, full transparency, no nonsense.': {
-			de: 'Monatliche Berichte, volle Transparenz, kein Nonsens.',
-			da: 'Månedlig rapportering, fuld gennemsigtighed, intet nonsens.',
-			sv: 'Månatlig rapportering, full transparens, inget nonsens.',
-			no: 'Månedlig rapportering, full åpenhet, null tull.',
-			nl: 'Maandelijkse rapportage, volledige transparantie, geen onzin.'
+		'Monthly reporting, full transparency.': {
+			de: 'Monatliche Berichte, volle Transparenz.',
+			da: 'Månedlig rapportering, fuld gennemsigtighed.',
+			sv: 'Månatlig rapportering, full transparens.',
+			no: 'Månedlig rapportering, full åpenhet.',
+			nl: 'Maandelijkse rapportage, volledige transparantie.'
 		},
 		'Please send your application by email to': {
 			de: 'Bitte schickt eure Bewerbung per E-Mail an',
