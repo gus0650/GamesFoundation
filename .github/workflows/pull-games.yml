@@ -1,0 +1,34 @@
+name: One-time - copy games/ from server into repo
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pull-games.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+      - name: Download games/ from server (replaces repo folder)
+        env:
+          PASS: ${{ secrets.FTP_PASSWORD }}
+          USER: ${{ secrets.FTP_USERNAME }}
+          HOST: ${{ secrets.FTP_SERVER }}
+          REMOTE_DIR: ${{ vars.SFTP_REMOTE_DIR || 'gamesfoundation' }}
+        run: |
+          rm -rf games
+          lftp -u "$USER,$PASS" -e "set sftp:auto-confirm yes; mirror --verbose $REMOTE_DIR/games games; bye" "sftp://$HOST"
+          ls -la games
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A games
+          git status --short
+          git diff --cached --quiet && echo "No changes" || (git commit -m "Copy games/ from web server into repo" && git push)
