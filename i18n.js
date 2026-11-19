@@ -105,19 +105,12 @@
 			no: 'Unngå store e-postvedlegg, og send heller lenker.',
 			nl: 'Stuur liever geen grote bijlagen, maar links.'
 		},
-		'Games we have contributed to': {
-			de: 'Spiele, an denen wir mitgewirkt haben',
-			da: 'Spil, vi har bidraget til',
-			sv: 'Spel som vi har bidragit till',
-			no: 'Spill vi har bidratt til',
-			nl: 'Games waaraan we hebben bijgedragen'
-		},
-		'(in chronological order)...': {
-			de: '(in chronologischer Reihenfolge)...',
-			da: '(i kronologisk rækkefølge)...',
-			sv: '(i kronologisk ordning)...',
-			no: '(i kronologisk rekkefølge)...',
-			nl: '(in chronologische volgorde)...'
+		'Games we have contributed to:': {
+			de: 'Spiele, an denen wir mitgewirkt haben:',
+			da: 'Spil, vi har bidraget til:',
+			sv: 'Spel som vi har bidragit till:',
+			no: 'Spill vi har bidratt til:',
+			nl: 'Games waaraan we hebben bijgedragen:'
 		},
 		'Games our team has worked on have received widespread recognition:': {
 			de: 'Spiele, an denen unser Team gearbeitet hat, wurden vielfach ausgezeichnet:',
