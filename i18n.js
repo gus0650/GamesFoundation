@@ -64,12 +64,12 @@
 		'FOR INVESTORS': {
 			de: 'FÜR INVESTOREN', da: 'FOR INVESTORER', sv: 'FÖR INVESTERARE', no: 'FOR INVESTORER', nl: 'VOOR INVESTEERDERS'
 		},
-		'You have money and you want to invest into digital games. We show you a porfolio of games and you can choose which ones you like. You co-fund the development of those games. We guarantee that the games will be completed and published. You get a share of the revenue.': {
-			de: 'Sie haben Kapital und möchten in digitale Spiele investieren. Wir zeigen Ihnen ein Portfolio von Spielen, und Sie wählen aus, welche Ihnen gefallen. Sie finanzieren die Entwicklung dieser Spiele mit. Wir garantieren, dass die Spiele fertiggestellt und veröffentlicht werden. Sie erhalten einen Anteil am Umsatz.',
-			da: 'Du har penge og vil investere i digitale spil. Vi viser dig en portefølje af spil, og du vælger dem, du kan lide. Du medfinansierer udviklingen af disse spil. Vi garanterer, at spillene bliver færdiggjort og udgivet. Du får en andel af omsætningen.',
-			sv: 'Du har pengar och vill investera i digitala spel. Vi visar dig en portfölj av spel och du väljer dem du gillar. Du är med och finansierar utvecklingen av spelen. Vi garanterar att spelen blir färdiga och släpps. Du får en andel av intäkterna.',
-			no: 'Du har penger og vil investere i digitale spill. Vi viser deg en portefølje av spill, og du velger de du liker. Du er med på å finansiere utviklingen av disse spillene. Vi garanterer at spillene blir ferdigstilt og utgitt. Du får en andel av inntektene.',
-			nl: 'Je hebt geld en wilt investeren in digitale games. We laten je een portfolio van games zien en jij kiest welke je aanspreken. Je financiert de ontwikkeling van die games mee. We garanderen dat de games worden voltooid en uitgebracht. Je krijgt een deel van de omzet.'
+		'You have money and you want to invest into digital games. We show you a porfolio of games and you can choose which ones you like. You co-fund the development of those games. We guarantee that the games will be completed and published. You get a share of the revenue from the sales of the games.': {
+			de: 'Sie haben Kapital und möchten in digitale Spiele investieren. Wir zeigen Ihnen ein Portfolio von Spielen, und Sie wählen aus, welche Ihnen gefallen. Sie finanzieren die Entwicklung dieser Spiele mit. Wir garantieren, dass die Spiele fertiggestellt und veröffentlicht werden. Sie erhalten einen Anteil aus dem Erlös der Spiele.',
+			da: 'Du har penge og vil investere i digitale spil. Vi viser dig en portefølje af spil, og du vælger dem, du kan lide. Du medfinansierer udviklingen af disse spil. Vi garanterer, at spillene bliver færdiggjort og udgivet. Du får en andel af indtægterne fra salget af spillene.',
+			sv: 'Du har pengar och vill investera i digitala spel. Vi visar dig en portfölj av spel och du väljer dem du gillar. Du är med och finansierar utvecklingen av spelen. Vi garanterar att spelen blir färdiga och släpps. Du får en andel av intäkterna från försäljningen av spelen.',
+			no: 'Du har penger og vil investere i digitale spill. Vi viser deg en portefølje av spill, og du velger de du liker. Du er med på å finansiere utviklingen av disse spillene. Vi garanterer at spillene blir ferdigstilt og utgitt. Du får en andel av inntektene fra salget av spillene.',
+			nl: 'Je hebt geld en wilt investeren in digitale games. We laten je een portfolio van games zien en jij kiest welke je aanspreken. Je financiert de ontwikkeling van die games mee. We garanderen dat de games worden voltooid en uitgebracht. Je krijgt een deel van de opbrengst uit de verkoop van de games.'
 		},
 		'Apply': {
 			de: 'Anfrage', da: 'Ansøg', sv: 'Ansök', no: 'Søk', nl: 'Aanvraag'
