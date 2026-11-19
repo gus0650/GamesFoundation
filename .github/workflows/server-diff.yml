@@ -1,0 +1,28 @@
+name: Diagnostic - files on server but not in repo (read-only)
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/server-diff.yml']
+  workflow_dispatch:
+
+jobs:
+  diff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+      - name: List server files and compare
+        env:
+          PASS: ${{ secrets.FTP_PASSWORD }}
+          USER: ${{ secrets.FTP_USERNAME }}
+          HOST: ${{ secrets.FTP_SERVER }}
+          REMOTE_DIR: ${{ vars.SFTP_REMOTE_DIR || 'gamesfoundation' }}
+        run: |
+          lftp -u "$USER,$PASS" -e "set sftp:auto-confirm yes; cd $REMOTE_DIR; find -l .; bye" "sftp://$HOST" > server.txt
+          echo "=== server listing (ls -l style) ==="; cat server.txt
+          awk '$1 !~ /^d/ {print $NF}' server.txt | sed 's#^\./##' | sort > server_files.txt
+          git ls-files | sort > repo_files.txt
+          echo "=== ONLY ON SERVER ==="
+          comm -23 server_files.txt repo_files.txt
