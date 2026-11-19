@@ -71,8 +71,8 @@
 			no: 'Du har penger og vil investere i digitale spill. Vi viser deg en portefølje av spill, og du velger de du liker. Du er med på å finansiere utviklingen av disse spillene. Vi garanterer at spillene blir ferdigstilt og utgitt. Du får en andel av inntektene.',
 			nl: 'Je hebt geld en wilt investeren in digitale games. We laten je een portfolio van games zien en jij kiest welke je aanspreken. Je financiert de ontwikkeling van die games mee. We garanderen dat de games worden voltooid en uitgebracht. Je krijgt een deel van de omzet.'
 		},
-		'Apply here': {
-			de: 'Anfrage', da: 'Ansøg her', sv: 'Ansök här', no: 'Søk her', nl: 'Meld je hier aan'
+		'Apply': {
+			de: 'Anfrage', da: 'Ansøg', sv: 'Ansök', no: 'Søk', nl: 'Aanvraag'
 		},
 		'FOR DEVELOPERS': {
 			de: 'FÜR ENTWICKLER', da: 'FOR UDVIKLERE', sv: 'FÖR UTVECKLARE', no: 'FOR UTVIKLERE', nl: 'VOOR ONTWIKKELAARS'
