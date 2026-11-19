@@ -1,0 +1,36 @@
+name: One-time - fetch Catharage cover from Steam
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/fetch-catharage.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download 600x900 library capsule
+        run: |
+          set -e
+          for u in \
+            https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3879850/library_600x900_2x.jpg \
+            https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3879850/library_600x900.jpg \
+            https://cdn.cloudflare.steamstatic.com/steam/apps/3879850/library_600x900_2x.jpg \
+            https://cdn.cloudflare.steamstatic.com/steam/apps/3879850/library_600x900.jpg ; do
+            echo "trying $u"
+            if curl -fsSL -o /tmp/c.jpg "$u"; then echo "OK $u"; break; fi
+          done
+          test -s /tmp/c.jpg
+          identify /tmp/c.jpg
+          convert /tmp/c.jpg -resize 600x900 -quality 88 games/catharage.jpg
+          identify games/catharage.jpg
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add games/catharage.jpg
+          git commit -m "Add Catharage cover (Steam library capsule 600x900)" && git push
