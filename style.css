@@ -66,6 +66,10 @@ a.cta:hover::after, a.cta:focus-visible::after {
 	transform: translateX(4px);
 }
 
+/* Services: each Apply button sits under its own text; on desktop both are pinned to the same height */
+td.svc { position: relative; padding-bottom: 4.5em; }
+td.svc .cta-row { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; }
+
 /* Mobile: full width and readable text size on narrow screens */
 @media (max-width: 800px) {
 	table[width="50%"] { width: 100% !important; }
@@ -74,4 +78,6 @@ a.cta:hover::after, a.cta:focus-visible::after {
 	a.cta { padding: 0.55em 1.3em; font-size: 1em; letter-spacing: 0.08em; }
 	/* Services: stack the two columns instead of squeezing them side by side */
 	table[width="90%"] td { display: block; width: 100% !important; }
+	td.svc { padding-bottom: 0; }
+	td.svc .cta-row { position: static; margin: 0 0 2.5em; }
 }
