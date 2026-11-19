@@ -31,9 +31,47 @@ div {
 a {
 	color: inherit;
 }
+/* Big call-to-action buttons ("Apply here") */
+a.cta {
+	display: inline-block;
+	margin: 0.8em 0 0.4em;
+	padding: 0.85em 2.4em;
+	border: 2px solid #ffffff;
+	border-radius: 999px;
+	background: #ffffff;
+	color: #000000;
+	font-size: 1.35em;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	box-shadow: 0 0 0 0 rgba(255,255,255,0.45), 0 6px 18px rgba(0,0,0,0.5);
+	transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+a.cta::after {
+	content: "\2192";
+	display: inline-block;
+	margin-left: 0.6em;
+	transition: transform 0.2s;
+}
+a.cta:hover, a.cta:focus-visible {
+	background: #000000;
+	color: #ffffff;
+	transform: translateY(-2px);
+	box-shadow: 0 0 0 6px rgba(255,255,255,0.15), 0 10px 24px rgba(0,0,0,0.6);
+	outline: none;
+}
+a.cta:hover::after, a.cta:focus-visible::after {
+	transform: translateX(4px);
+}
+
 /* Mobile: full width and readable text size on narrow screens */
 @media (max-width: 800px) {
 	table[width="50%"] { width: 100% !important; }
 	div { width: 100vw; font-size: 16px; }
 	.btn { font-size: 16px; }
+	a.cta { padding: 0.8em 1.6em; font-size: 1.1em; letter-spacing: 0.08em; }
+	/* Services: stack the two columns instead of squeezing them side by side */
+	table[width="90%"] td { display: block; width: 100% !important; }
 }
