@@ -20,7 +20,7 @@ jobs:
           curl -fsSL -G "https://api.steampowered.com/IStoreBrowseService/GetItems/v1/" --data-urlencode "input_json=$q" -o /tmp/items.json
           jq '.response.store_items[0].assets' /tmp/items.json
           fmt=$(jq -r '.response.store_items[0].assets.asset_url_format' /tmp/items.json)
-          for key in library_capsule_2x library_capsule; do
+          for key in library_capsule library_capsule_2x; do
             f=$(jq -r ".response.store_items[0].assets.$key // empty" /tmp/items.json)
             [ -n "$f" ] || continue
             u="https://shared.akamai.steamstatic.com/store_item_assets/${fmt//\$\{FILENAME\}/$f}"
@@ -28,9 +28,8 @@ jobs:
             if curl -fsSL -o /tmp/c.jpg "$u"; then echo "OK $u"; break; fi
           done
           test -s /tmp/c.jpg
-          identify /tmp/c.jpg
-          convert /tmp/c.jpg -resize 600x900 -quality 88 games/catharage.jpg
-          identify games/catharage.jpg
+          file /tmp/c.jpg
+          cp /tmp/c.jpg games/catharage.jpg
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
