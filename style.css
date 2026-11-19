@@ -35,12 +35,12 @@ a {
 a.cta {
 	display: inline-block;
 	margin: 0.8em 0 0.4em;
-	padding: 0.85em 2.4em;
+	padding: 0.55em 1.5em;
 	border: 2px solid #ffffff;
-	border-radius: 999px;
+	border-radius: 0;
 	background: #ffffff;
 	color: #000000;
-	font-size: 1.35em;
+	font-size: 1.05em;
 	font-weight: 700;
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
@@ -71,7 +71,7 @@ a.cta:hover::after, a.cta:focus-visible::after {
 	table[width="50%"] { width: 100% !important; }
 	div { width: 100vw; font-size: 16px; }
 	.btn { font-size: 16px; }
-	a.cta { padding: 0.8em 1.6em; font-size: 1.1em; letter-spacing: 0.08em; }
+	a.cta { padding: 0.55em 1.3em; font-size: 1em; letter-spacing: 0.08em; }
 	/* Services: stack the two columns instead of squeezing them side by side */
 	table[width="90%"] td { display: block; width: 100% !important; }
 }
