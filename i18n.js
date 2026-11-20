@@ -24,6 +24,7 @@
 		'WELCOME!':          { de: 'WILLKOMMEN!',      da: 'VELKOMMEN!',          sv: 'VÄLKOMMEN!',          no: 'VELKOMMEN!',           nl: 'WELKOM!' },
 		'SERVICES':          { de: 'LEISTUNGEN',       da: 'YDELSER',             sv: 'TJÄNSTER',            no: 'TJENESTER',            nl: 'DIENSTEN' },
 		'JOBS&INTERNSHIPS':  { de: 'JOBS & PRAKTIKA',  da: 'JOB & PRAKTIK',       sv: 'JOBB & PRAKTIK',      no: 'JOBB & PRAKSIS',       nl: 'VACATURES & STAGES' },
+		'PLATFORMS':         { de: 'PLATTFORMEN',      da: 'PLATFORME',           sv: 'PLATTFORMAR',         no: 'PLATTFORMER',          nl: 'PLATFORMS' },
 		'PROJECTS':          { de: 'PROJEKTE',         da: 'PROJEKTER',           sv: 'PROJEKT',             no: 'PROSJEKTER',           nl: 'PROJECTEN' },
 		'AWARDS':            { de: 'AUSZEICHNUNGEN',   da: 'PRISER',              sv: 'UTMÄRKELSER',         no: 'PRISER',               nl: 'PRIJZEN' },
 		'LINKS':             { de: 'LINKS',            da: 'LINKS',               sv: 'LÄNKAR',              no: 'LENKER',               nl: 'LINKS' },
