@@ -171,7 +171,9 @@
 		if (!text) return null;
 		if (TEXTS[text] && TEXTS[text][lang]) return TEXTS[text][lang];
 		var compact = text.replace(/\s+/g, '').toUpperCase();
-		if (/^(\S\s+)+\S$/.test(text) && HEADINGS[compact] && HEADINGS[compact][lang]) return spaced(HEADINGS[compact][lang]);
+		if (HEADINGS[compact] && HEADINGS[compact][lang] && text === text.toUpperCase()) {
+			return /^(\S\s+)+\S$/.test(text) ? spaced(HEADINGS[compact][lang]) : HEADINGS[compact][lang];
+		}
 		for (var i = 0; i < PATTERNS.length; i++) {
 			var m = PATTERNS[i].re.exec(text);
 			if (m) return PATTERNS[i].t[lang].replace('$1', m[1].replace(/ and /g, ' ' + AND[lang] + ' '));

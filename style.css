@@ -121,6 +121,10 @@ ul.carousel img { display: block; max-width: 100%; max-height: 100%; width: auto
 }
 .carousel-dots button.active { background: #000000; }
 
+/* Section headings: wide letter spacing via CSS (real words stay readable for search engines) */
+h2, b.spaced { letter-spacing: 0.32em; }
+h2 { padding-left: 0.32em; }
+
 /* Mobile: full width and readable text size on narrow screens */
 @media (max-width: 800px) {
 	table[width="50%"] { width: 100% !important; }
