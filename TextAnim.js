@@ -11,8 +11,8 @@
  * without JavaScript still see the plain list. Visitors who have reduced
  * motion enabled in their operating system get the tiles without animation.
  *
- * Usage in index.html:
- *   <p data-textanim>Steam, Xbox, PlayStation, Nintendo</p>
+ * Usage in index.html (a <br> forces a line break):
+ *   <p data-textanim>Steam, Xbox, PlayStation, Nintendo,<br>PlayStore, AppStore</p>
  */
 (function () {
 	'use strict';
@@ -52,21 +52,33 @@
 	}
 
 	function setup(container) {
-		var words = container.textContent.split(',').map(function (w) { return w.trim(); }).filter(Boolean);
+		// Collect the comma-separated words; a <br> in the HTML becomes a line break.
+		var items = [];
+		for (var n = 0; n < container.childNodes.length; n++) {
+			var node = container.childNodes[n];
+			if (node.nodeName === 'BR') { items.push(null); continue; }
+			(node.textContent || '').split(',').forEach(function (w) {
+				w = w.trim();
+				if (w) items.push(w);
+			});
+		}
+		var words = items.filter(function (w) { return w !== null; });
 		if (!words.length) return;
 
 		container.setAttribute('aria-label', words.join(', '));
 		container.textContent = '';
 		container.classList.add('textanim');
 
-		var tiles = words.map(function (w) {
+		var tiles = [];
+		items.forEach(function (w) {
+			if (w === null) { container.appendChild(document.createElement('br')); return; }
 			var t = document.createElement('span');
 			t.className = 'textanim-tile';
 			t.setAttribute('aria-hidden', 'true');
 			t.textContent = w;
 			container.appendChild(t);
 			container.appendChild(document.createTextNode(' '));
-			return t;
+			tiles.push(t);
 		});
 
 		if (reduceMotion) {
