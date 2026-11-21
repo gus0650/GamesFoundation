@@ -125,6 +125,26 @@ ul.carousel img { display: block; max-width: 100%; max-height: 100%; width: auto
 h2, b.spaced { letter-spacing: 0.32em; }
 h2 { padding-left: 0.32em; }
 
+/* Platforms text animation (TextAnim.js) */
+p.textanim { margin: 0.6em 8% 1.2em; line-height: 2.6; }
+.textanim-tile {
+	display: inline-block;
+	margin: 0.2em 0.3em;
+	padding: 0.35em 0.9em;
+	border: 2px solid #000000;
+	background: #000000;
+	color: #ffffff;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	line-height: 1.2;
+	opacity: 0;
+	transform: translateY(0.6em) scale(0.9);
+	transition: opacity 0.25s ease-out, transform 0.25s ease-out, background 0.15s, color 0.15s;
+}
+.textanim-tile.on { opacity: 1; transform: none; }
+.textanim-tile.glitch { background: #ffffff; color: #000000; }
+
 /* Mobile: full width and readable text size on narrow screens */
 @media (max-width: 800px) {
 	table[width="50%"] { width: 100% !important; }
