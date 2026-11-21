@@ -5,7 +5,7 @@
  * words inside (e.g. "Steam, Xbox, PlayStation") are turned into tiles.
  * When the element scrolls into view, the tiles appear one after another and
  * each word "decodes" from random characters like an old arcade screen.
- * Afterwards, a random tile glitches briefly every few seconds.
+ * Afterwards one random word after another re-decodes in an endless loop.
  *
  * The original text stays in the HTML, so search engines and visitors
  * without JavaScript still see the plain list. Visitors who have reduced
@@ -20,7 +20,7 @@
 	var GLYPHS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#$%&*+<>/\\=?';
 	var STEP_MS = 30;        // speed of the character flicker
 	var STAGGER_MS = 220;    // delay between two tiles appearing
-	var GLITCH_EVERY_MS = 3500;
+	var LOOP_PAUSE_MS = 60;  // pause between two re-decodes in the endless loop
 
 	var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -84,15 +84,20 @@
 					decode(t, words[i]);
 				}, i * STAGGER_MS);
 			});
-			// Occasional glitch on a random tile once everything is visible.
-			setTimeout(function () {
-				setInterval(function () {
-					var i = Math.floor(Math.random() * tiles.length);
-					var t = tiles[i];
-					t.classList.add('glitch');
-					decode(t, words[i], function () { t.classList.remove('glitch'); });
-				}, GLITCH_EVERY_MS);
-			}, tiles.length * STAGGER_MS + 1000);
+			// Endless loop: as soon as one word has decoded, the next random word starts.
+			var last = -1;
+			function loop() {
+				var i;
+				do { i = Math.floor(Math.random() * tiles.length); } while (tiles.length > 1 && i === last);
+				last = i;
+				var t = tiles[i];
+				t.classList.add('glitch');
+				decode(t, words[i], function () {
+					t.classList.remove('glitch');
+					setTimeout(loop, LOOP_PAUSE_MS);
+				});
+			}
+			setTimeout(loop, tiles.length * STAGGER_MS + 400);
 		}
 
 		if ('IntersectionObserver' in window) {

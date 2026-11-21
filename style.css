@@ -126,24 +126,22 @@ h2, b.spaced { letter-spacing: 0.32em; }
 h2 { padding-left: 0.32em; }
 
 /* Platforms text animation (TextAnim.js) */
-p.textanim { margin: 0.6em 8% 1.2em; line-height: 2.6; }
+p.textanim { margin: 0.6em 8% 1.2em; line-height: 2; }
 .textanim-tile {
 	display: inline-block;
-	margin: 0.2em 0.3em;
-	padding: 0.35em 0.9em;
-	border: 2px solid #000000;
-	background: #000000;
-	color: #ffffff;
+	margin: 0.1em 0.7em;
+	color: #000000;
 	font-family: "Courier New", Courier, monospace;
+	font-size: 1.15em;
 	font-weight: 700;
 	letter-spacing: 0.08em;
-	line-height: 1.2;
+	line-height: 1.4;
 	opacity: 0;
-	transform: translateY(0.6em) scale(0.9);
-	transition: opacity 0.25s ease-out, transform 0.25s ease-out, background 0.15s, color 0.15s;
+	transform: translateY(0.6em);
+	transition: opacity 0.25s ease-out, transform 0.25s ease-out, color 0.1s;
 }
 .textanim-tile.on { opacity: 1; transform: none; }
-.textanim-tile.glitch { background: #ffffff; color: #000000; }
+.textanim-tile.glitch { color: #666666; }
 
 /* Mobile: full width and readable text size on narrow screens */
 @media (max-width: 800px) {
