@@ -143,6 +143,8 @@
 	var PATTERNS = [
 		{ re: /^\.\.\.\s*in (?:in )?collaboration with (.+):$/i,
 		  t: { de: '...in Zusammenarbeit mit $1:', da: '...i samarbejde med $1:', sv: '...i samarbete med $1:', no: '...i samarbeid med $1:', nl: '...in samenwerking met $1:' } },
+		{ re: /^with (.+)$/,
+		  t: { de: 'mit $1', da: 'med $1', sv: 'med $1', no: 'med $1', nl: 'met $1' } },
 		{ re: /^\.\.\.\s*for (.+):$/i,
 		  t: { de: '...für $1:', da: '...for $1:', sv: '...för $1:', no: '...for $1:', nl: '...voor $1:' } }
 	];
