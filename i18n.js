@@ -106,6 +106,13 @@
 			no: 'Unngå store e-postvedlegg, og send heller lenker.',
 			nl: 'Stuur liever geen grote bijlagen, maar links.'
 		},
+		'We are licensed for:': {
+			de: 'Wir sind lizenziert für:',
+			da: 'Vi har licens til:',
+			sv: 'Vi är licensierade för:',
+			no: 'Vi er lisensiert for:',
+			nl: 'Wij zijn gelicentieerd voor:'
+		},
 		'Games we have contributed to:': {
 			de: 'Spiele, an denen wir mitgewirkt haben:',
 			da: 'Spil, vi har bidraget til:',
